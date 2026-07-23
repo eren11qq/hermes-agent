@@ -48,10 +48,10 @@ The report draws from these files — verify they exist before running; if any a
 
 | Source | Path | Frequency | Content |
 |---|---|---|---|
-| **Top 10 Leads Tracker** | `C:\Users\戴某\Desktop\AI漫剧获客-Top10线索表.md` | Updated on research | Lead profiles, priority scores, pain points, contact info |
-| **Outreach Templates** | `C:\Users\戴某\Desktop\AI漫剧获客-行业话术模板库.md` | Static reference | Template library used for outreach status notes |
-| **Generated Outreach Files** | `C:\Users\戴某\Desktop\hermes-agent\optional-skills\daily-report\` (and sibling dirs) | Daily | Previous handoff files from outreach-generator, used to track follow-up status |
-| **Pipeline State File** | `C:\Users\戴某\Desktop\hermes-agent\optional-skills\daily-report\pipeline-state.json` (optional, created on first run) | Updated per report | Cached pipeline state for movement tracking |
+| **Top 10 Leads Tracker** | `../../references/AI漫剧获客-Top10线索表.md` | Updated on research | Lead profiles, priority scores, pain points, contact info |
+| **Outreach Templates** | `../../references/AI漫剧获客-行业话术模板库.md` | Static reference | Template library used for outreach status notes |
+| **Generated Outreach Files** | `$PROJECT_ROOT/optional-skills/daily-report/` (and sibling dirs) | Daily | Previous handoff files from outreach-generator, used to track follow-up status |
+| **Pipeline State File** | `$PROJECT_ROOT/optional-skills/daily-report/pipeline-state.json` (optional, created on first run) | Updated per report | Cached pipeline state for movement tracking |
 
 If the Pipeline State File does not exist yet, the report will create a baseline snapshot and note that movement tracking starts from the next report.
 
@@ -339,7 +339,7 @@ These times are local (Asia/Shanghai timezone assumed). The report is generated 
 The report is written to:
 
 ```
-C:\Users\戴某\Desktop\hermes-agent\optional-skills\daily-report\{date}-report.md
+$PROJECT_ROOT/optional-skills/daily-report/{date}-report.md
 ```
 
 Where `{date}` is `YYYY-MM-DD` for daily reports or `YYYY-MM-DD-weekly` for weekly reports.
@@ -387,7 +387,7 @@ After generation, present the report in this structure:
 
 **Type:** Daily | **Pipeline Health:** {GREEN/YELLOW/RED} | **Data Source:** Top 10 Leads Tracker
 
-Report written to: `C:\Users\戴某\Desktop\hermes-agent\optional-skills\daily-report\{date}-report.md`
+Report written to: `$PROJECT_ROOT/optional-skills/daily-report/{date}-report.md`
 
 **Summary:**
 - Active leads: {count}
@@ -447,7 +447,7 @@ The optional pipeline state file (`pipeline-state.json`) stores the last known s
 This file is created automatically on the first report run and updated on each subsequent run. It lives at:
 
 ```
-C:\Users\戴某\Desktop\hermes-agent\optional-skills\daily-report\pipeline-state.json
+$PROJECT_ROOT/optional-skills/daily-report/pipeline-state.json
 ```
 
 ---
@@ -549,6 +549,6 @@ This skill is part of the AI漫剧获客 toolchain:
 
 - **`outreach-generator`** — Generates personalized outreach copy for individual leads. Consumed by this skill to track outreach status.
 - **`daily-report`** (this skill)** — Generates pipeline reports. Consumes lead data and outreach status.
-- **Top 10 Leads Tracker** (`C:\Users\戴某\Desktop\AI漫剧获客-Top10线索表.md`) — Central lead research file. Updated by research skills, consumed by this report.
+- **Top 10 Leads Tracker** (`../../references/AI漫剧获客-Top10线索表.md`) — Central lead research file. Updated by research skills, consumed by this report.
 
 Workflow: `Research → Top 10 Tracker → Outreach Generator → Daily Report → Action`

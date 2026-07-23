@@ -376,8 +376,8 @@ After completing a company research dossier, verify against this checklist:
 
 | File | Purpose |
 |---|---|
-| `C:\Users\戴某\Desktop\AI漫剧获客-Top10线索表.md` | Example output showing expected quality and detail level |
-| `C:\Users\戴某\Desktop\AI漫剧获客-行业话术模板库.md` | Outreach templates that consume research output |
+| `../../references/AI漫剧获客-Top10线索表.md` | Example output showing expected quality and detail level |
+| `../../references/AI漫剧获客-行业话术模板库.md` | Outreach templates that consume research output |
 | `../lead-finder/` | Stage 1 pipeline — lead discovery |
 | `../../outreach-generator/` | Stage 3 pipeline — personalized outreach message generation |
 

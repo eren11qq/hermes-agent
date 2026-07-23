@@ -18,7 +18,7 @@ Take raw or researched lead profiles (output of company-researcher or manual inp
 
 This skill sits in the pipeline after company-researcher (which produces lead dossiers) and before outreach-generator (which produces personalized copy). Its output drives the outreach priority order and informs which template/channel to use.
 
-Reference: The Top 10 scored leads table at `C:\Users\戴某\Desktop\AI漫剧获客-Top10线索表.md` shows the output format this skill produces.
+Reference: The Top 10 scored leads table at `../../references/AI漫剧获客-Top10线索表.md` shows the output format this skill produces.
 </Purpose>
 
 <Use_When>

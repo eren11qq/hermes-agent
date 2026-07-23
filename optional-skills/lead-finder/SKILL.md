@@ -18,8 +18,8 @@ Discover enterprise leads who produce AI-generated comics/short dramas (AI漫剧
 This skill targets companies, studios, and teams — NOT individual creators or tutorial accounts. Every lead must pass a clear enterprise-vs-individual filter before being output.
 
 Reference files for industry context and known leads:
-- `C:\Users\戴某\Desktop\AI漫剧获客-Top10线索表.md` — example leads and their quality signals
-- `C:\Users\戴某\Desktop\AI漫剧获客-关键词库.md` — keyword library with all tested search terms
+- `../../references/AI漫剧获客-Top10线索表.md` — example leads and their quality signals
+- `../../references/AI漫剧获客-关键词库.md` — keyword library with all tested search terms
 </Purpose>
 
 <Use_When>
@@ -326,6 +326,6 @@ After completing a lead-finder session, verify against this checklist:
 **Downstream**: Output feeds into the `outreach-generator` skill for personalized message generation. Each lead row in the output maps to a lead profile for outreach generation.
 
 **Related files**:
-- `C:\Users\戴某\Desktop\AI漫剧获客-关键词库.md` — full keyword library with effectiveness rankings
-- `C:\Users\戴某\Desktop\AI漫剧获客-Top10线索表.md` — example high-quality lead profiles
-- `C:\Users\戴某\Desktop\AI漫剧获客-行业话术模板库.md` — outreach templates for downstream use
+- `../../references/AI漫剧获客-关键词库.md` — full keyword library with effectiveness rankings
+- `../../references/AI漫剧获客-Top10线索表.md` — example high-quality lead profiles
+- `../../references/AI漫剧获客-行业话术模板库.md` — outreach templates for downstream use

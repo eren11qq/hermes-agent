@@ -16,7 +16,7 @@ handoff: outreach-{lead_slug}.md
 Given a lead profile (company, founder, funding, pain points, hiring signals, etc.), generate personalized outreach copy for that specific lead. Every message must be channel-appropriate, variable-substituted, and grounded in the recipient's actual situation — never generic.
 
 This skill encodes the outreach methodology from the comprehensive template library at:
-`C:\Users\戴某\Desktop\AI漫剧获客-行业话术模板库.md`
+`../../references/AI漫剧获客-行业话术模板库.md`
 
 That file contains the full 70+ variable reference, all 12 templates (A-L), and deep industry context. This skill references it but is self-contained for lead-to-copy generation.
 </Purpose>
@@ -132,7 +132,7 @@ Apply these five principles to every generated message:
 
 ### Template Selection
 
-Based on the channel and lead classification from Steps 1-2, select the appropriate template from the library. The canonical templates are in `C:\Users\戴某\Desktop\AI漫剧获客-行业话术模板库.md` (Templates A-L).
+Based on the channel and lead classification from Steps 1-2, select the appropriate template from the library. The canonical templates are in `../../references/AI漫剧获客-行业话术模板库.md` (Templates A-L).
 
 **IMPORTANT — Variable Rule**: Pain point descriptions and solution descriptions MUST use custom variables (`{specific_pain_point}`, `{solution_brief}`, `{one_sentence_how}`, `{core_capability}`), never hard-coded technical specifics like "ComfyUI workflow node" or "SDXL pipeline". Different products have different capabilities — the user will fill in their product's actual approach.
 
@@ -256,6 +256,6 @@ After generating, present the result in this structure:
 ## Template Reference
 
 The canonical templates (A-L) and all 6 anti-rejection scenarios live in:
-`C:\Users\戴某\Desktop\AI漫剧获客-行业话术模板库.md`
+`../../references/AI漫剧获客-行业话术模板库.md`
 
 This skill is a routing and generation layer on top of that library — always refer to it for exact template text and full variable definitions.
