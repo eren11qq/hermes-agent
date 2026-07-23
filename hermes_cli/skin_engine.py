@@ -201,7 +201,7 @@ class SkinConfig:
 _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
     "default": {
         "name": "default",
-        "description": "Classic Hermes — gold and kawaii",
+        "description": "拓漫 TouMan 默认主题 — 金橙配色",
         # Dark-authored. Values match the TUI's DARK_THEME so the classic CLI
         # and the TUI render the same Hermes gold.
         "colors": {
@@ -274,10 +274,10 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
             # Empty = use hardcoded defaults in display.py
         },
         "branding": {
-            "agent_name": "Hermes Agent",
-            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Hermes ",
+            "agent_name": "拓漫 TouMan",
+            "welcome": "拓漫 TouMan — AI漫剧智能获客Agent。输入消息或 /help 查看命令。",
+            "goodbye": "再见！",
+            "response_label": " 拓漫 ",
             "prompt_symbol": "❯",
             "help_header": "(^_^)? Available Commands",
         },
@@ -395,10 +395,10 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         },
         "spinner": {},
         "branding": {
-            "agent_name": "Hermes Agent",
-            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Hermes ",
+            "agent_name": "拓漫 TouMan",
+            "welcome": "拓漫 TouMan — AI漫剧智能获客Agent。输入消息或 /help 查看命令。",
+            "goodbye": "再见！",
+            "response_label": " 拓漫 ",
             "prompt_symbol": "❯",
             "help_header": "[?] Available Commands",
         },
@@ -439,10 +439,10 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         },
         "spinner": {},
         "branding": {
-            "agent_name": "Hermes Agent",
-            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Hermes ",
+            "agent_name": "拓漫 TouMan",
+            "welcome": "拓漫 TouMan — AI漫剧智能获客Agent。输入消息或 /help 查看命令。",
+            "goodbye": "再见！",
+            "response_label": " 拓漫 ",
             "prompt_symbol": "❯",
             "help_header": "(^_^)? Available Commands",
         },
@@ -485,10 +485,10 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         },
         "spinner": {},
         "branding": {
-            "agent_name": "Hermes Agent",
-            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Hermes ",
+            "agent_name": "拓漫 TouMan",
+            "welcome": "拓漫 TouMan — AI漫剧智能获客Agent。输入消息或 /help 查看命令。",
+            "goodbye": "再见！",
+            "response_label": " 拓漫 ",
             "prompt_symbol": "❯",
             "help_header": "[?] Available Commands",
         },
@@ -531,10 +531,10 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         },
         "spinner": {},
         "branding": {
-            "agent_name": "Hermes Agent",
-            "welcome": "Welcome to Hermes Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! \u2695",
-            "response_label": " \u2695 Hermes ",
+            "agent_name": "\u62d3\u6f2b TouMan",
+            "welcome": "\u62d3\u6f2b TouMan \u2014 AI\u6f2b\u5267\u667a\u80fd\u83b7\u5ba2Agent\u3002\u8f93\u5165\u6d88\u606f\u6216 /help \u67e5\u770b\u547d\u4ee4\u3002",
+            "goodbye": "\u518d\u89c1\uff01",
+            "response_label": " \u62d3\u6f2b ",
             "prompt_symbol": "\u276f",
             "help_header": "(^_^)? Available Commands",
         },

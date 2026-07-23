@@ -1,5 +1,5 @@
 """
-Top-level argparse construction for the hermes CLI.
+Top-level argparse construction for the tuoman CLI.
 
 Lives in its own module so other modules (e.g. ``relaunch.py``) can
 introspect the parser to discover which flags exist without running the
@@ -39,46 +39,46 @@ def _inherited_flag(parser, *args, **kwargs):
 
 _EPILOGUE = """
 Examples:
-    hermes                        Start interactive chat
-    hermes chat -q "Hello"        Single query mode
-    hermes --tui                  Launch the modern TUI (or set display.interface: tui)
-    hermes --cli                  Force the classic REPL (overrides display.interface: tui)
-    hermes -c                     Resume the most recent session
-    hermes -c "my project"        Resume a session by name (latest in lineage)
-    hermes --resume <session_id>  Resume a specific session by ID
-    hermes setup                  Run setup wizard
-    hermes logout                 Clear stored authentication
-    hermes auth add <provider>    Add a pooled credential
-    hermes auth list              List pooled credentials
-    hermes auth remove <p> <t>    Remove pooled credential by index, id, or label
-    hermes auth reset <provider>  Clear exhaustion status for a provider
-    hermes model                  Select default model
-    hermes fallback [list]        Show fallback provider chain
-    hermes fallback add           Add a fallback provider (same picker as `hermes model`)
-    hermes fallback remove        Remove a fallback provider from the chain
-    hermes config                 View configuration
-    hermes config edit            Edit config in $EDITOR
-    hermes config set model gpt-4 Set a config value
-    hermes gateway                Run messaging gateway
-    hermes -s hermes-agent-dev,github-auth
-    hermes -w                     Start in isolated git worktree
-    hermes gateway install        Install gateway background service
-    hermes sessions list          List past sessions
-    hermes sessions browse        Interactive session picker
-    hermes sessions rename ID T   Rename/title a session
-    hermes logs                   View agent.log (last 50 lines)
-    hermes logs -f                Follow agent.log in real time
-    hermes logs errors            View errors.log
-    hermes logs --since 1h        Lines from the last hour
-    hermes debug share             Upload debug report for support
-    hermes console                Open the safe Hermes command console
-    hermes update                 Update to latest version
-    hermes dashboard              Start web UI dashboard (port 9119)
-    hermes dashboard --stop       Stop running dashboard processes
-    hermes dashboard --status     List running dashboard processes
+    tuoman                        Start interactive chat
+    tuoman chat -q "Hello"        Single query mode
+    tuoman --tui                  Launch the modern TUI (or set display.interface: tui)
+    tuoman --cli                  Force the classic REPL (overrides display.interface: tui)
+    tuoman -c                     Resume the most recent session
+    tuoman -c "my project"        Resume a session by name (latest in lineage)
+    tuoman --resume <session_id>  Resume a specific session by ID
+    tuoman setup                  Run setup wizard
+    tuoman logout                 Clear stored authentication
+    tuoman auth add <provider>    Add a pooled credential
+    tuoman auth list              List pooled credentials
+    tuoman auth remove <p> <t>    Remove pooled credential by index, id, or label
+    tuoman auth reset <provider>  Clear exhaustion status for a provider
+    tuoman model                  Select default model
+    tuoman fallback [list]        Show fallback provider chain
+    tuoman fallback add           Add a fallback provider (same picker as `tuoman model`)
+    tuoman fallback remove        Remove a fallback provider from the chain
+    tuoman config                 View configuration
+    tuoman config edit            Edit config in $EDITOR
+    tuoman config set model gpt-4 Set a config value
+    tuoman gateway                Run messaging gateway
+    tuoman -s tuoman-agent-dev,github-auth
+    tuoman -w                     Start in isolated git worktree
+    tuoman gateway install        Install gateway background service
+    tuoman sessions list          List past sessions
+    tuoman sessions browse        Interactive session picker
+    tuoman sessions rename ID T   Rename/title a session
+    tuoman logs                   View agent.log (last 50 lines)
+    tuoman logs -f                Follow agent.log in real time
+    tuoman logs errors            View errors.log
+    tuoman logs --since 1h        Lines from the last hour
+    tuoman debug share             Upload debug report for support
+    tuoman console                Open the safe 拓漫 command console
+    tuoman update                 Update to latest version
+    tuoman dashboard              Start web UI dashboard (port 9119)
+    tuoman dashboard --stop       Stop running dashboard processes
+    tuoman dashboard --status     List running dashboard processes
 
 For more help on a command:
-    hermes <command> --help
+    tuoman <command> --help
 """
 
 
@@ -90,8 +90,8 @@ def build_top_level_parser():
     other subparsers via ``subparsers.add_parser(...)``.
     """
     parser = argparse.ArgumentParser(
-        prog="hermes",
-        description="Hermes Agent - AI assistant with tool-calling capabilities",
+        prog="tuoman",
+        description="拓漫 TouMan - AI漫剧智能获客Agent",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=_EPILOGUE,
     )
@@ -269,7 +269,7 @@ def build_top_level_parser():
     chat_parser = subparsers.add_parser(
         "chat",
         help="Interactive chat with the agent",
-        description="Start an interactive chat session with Hermes Agent",
+        description="Start an interactive chat session with 拓漫 TouMan",
     )
     chat_parser.add_argument(
         "-q", "--query", help="Single query (non-interactive mode)"
@@ -417,7 +417,7 @@ def build_top_level_parser():
         "--safe-mode",
         action="store_true",
         default=argparse.SUPPRESS,
-        help="Troubleshooting mode: disable ALL customizations — user config, AGENTS.md/memory injection, plugins, and MCP servers (implies --ignore-user-config and --ignore-rules). Use to isolate whether a problem comes from your setup or from Hermes itself.",
+        help="Troubleshooting mode: disable ALL customizations — user config, AGENTS.md/memory injection, plugins, and MCP servers (implies --ignore-user-config and --ignore-rules). Use to isolate whether a problem comes from your setup or from 拓漫 itself.",
     )
     chat_parser.add_argument(
         "--source",

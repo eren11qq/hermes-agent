@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Hermes Agent CLI - Interactive Terminal Interface
+拓漫 TouMan CLI - AI漫剧获客Agent
 
-A beautiful command-line interface for the Hermes Agent, inspired by Claude Code.
-Features ASCII art branding, interactive REPL, toolset selection, and rich formatting.
+AI漫剧行业智能获客命令行工具。
+支持交互式REPL、工具集选择、Rich格式化输出。
 
 Usage:
-    python cli.py                          # Start interactive mode with all tools
-    python cli.py --toolsets web,terminal  # Start with specific toolsets
-    python cli.py --skills hermes-agent-dev,github-auth
-    python cli.py --list-tools             # List available tools and exit
+    python cli.py                    # 交互模式
+    python cli.py --toolsets web     # 指定工具集
+    python cli.py --skills lead-finder,company-researcher
+    python cli.py --list-tools       # 列出可用工具
 """
 
 # IMPORTANT: hermes_bootstrap must be the very first import — UTF-8 stdio

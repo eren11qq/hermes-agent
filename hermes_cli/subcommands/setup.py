@@ -1,4 +1,4 @@
-"""``hermes setup`` subcommand parser.
+"""``tuoman setup`` subcommand parser.
 
 Extracted verbatim from ``hermes_cli/main.py:main()`` (god-file Phase 2).
 Handler injected to avoid importing ``main``.
@@ -17,8 +17,8 @@ def build_setup_parser(subparsers, *, cmd_setup: Callable) -> None:
     setup_parser = subparsers.add_parser(
         "setup",
         help="Interactive setup wizard",
-        description="Configure Hermes Agent with an interactive wizard. "
-        "Run a specific section: hermes setup model|tts|terminal|gateway|tools|agent",
+        description="Configure 拓漫 TouMan with an interactive wizard. "
+        "Run a specific section: tuoman setup model|tts|terminal|gateway|tools|agent",
     )
     setup_parser.add_argument(
         "section",
