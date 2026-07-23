@@ -1,6 +1,7 @@
 ---
 name: company-researcher
-description: Deep enterprise research for AI漫剧/内容制作 industry leads. Company verification, pain point analysis, decision maker identification, HOT/WARM/COLD scoring.
+description: Deep enterprise research for AI漫剧 industry leads
+platforms: [win32, linux]
 argument-hint: "<company_name> [optional: founder_name or website]"
 triggers:
   - "调研"

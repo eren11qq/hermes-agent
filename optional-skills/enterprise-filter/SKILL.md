@@ -1,6 +1,7 @@
 ---
 name: enterprise-filter
-description: Three-mode lead scoring and ranking for AI漫剧 industry. Signal scoring (20+ weighted signals), BANT qualification, ICP matching. Outputs ranked priority list for outreach.
+description: Three-mode lead scoring for AI漫剧 sales pipeline
+platforms: [win32, linux]
 argument-hint: "<mode: signal|bant|icp> <leads JSON or file path>"
 triggers:
   - "打分"

@@ -1,6 +1,7 @@
 ---
 name: lead-finder
-description: Multi-platform lead discovery for AI漫剧/短剧 enterprise customers across B站, 小红书, 抖音, YouTube, GitHub
+description: Multi-platform lead discovery for AI漫剧 enterprises
+platforms: [win32, linux]
 argument-hint: "[platform] [keyword]"
 triggers:
   - "找客户"

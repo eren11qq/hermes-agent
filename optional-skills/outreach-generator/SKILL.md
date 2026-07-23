@@ -1,6 +1,7 @@
 ---
 name: outreach-generator
-description: Generate personalized outreach messages for AI漫剧 (AI Comic Drama) and content-production industry leads. Given a lead profile, produce channel-appropriate copy with proper variable substitution.
+description: Personalized outreach for AI漫剧 industry leads
+platforms: [win32, linux]
 argument-hint: "<lead profile JSON or structured description>"
 triggers:
   - "outreach"

@@ -1,6 +1,7 @@
 ---
 name: daily-report
-description: Generate daily and weekly lead pipeline reports for the AI漫剧获客 (AI Comic Drama Customer Acquisition) system. Sourced from the Top 10 leads tracker and updated with pipeline movements, hot lead alerts, and industry monitoring.
+description: Daily/weekly pipeline reports for AI漫剧获客 system
+platforms: [win32, linux]
 argument-hint: "date (YYYY-MM-DD | 'today' | 'week')"
 triggers:
   - "日报"

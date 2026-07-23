@@ -1,6 +1,7 @@
 ---
 name: sales-outreach
-description: Full-cycle sales pipeline orchestrator — discover, research, score, generate, and report
+description: Full-cycle pipeline orchestrator for AI漫剧获客
+platforms: [win32, linux]
 argument-hint: "<mode: full|discover|report>"
 triggers:
   - "全流程"
